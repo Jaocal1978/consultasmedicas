@@ -1,0 +1,27 @@
+<div class="container">
+    <h1 class="text-center">Ingreso Paciente</h1>
+    <div class="row">
+        <div class="col">
+            <form action="/crearPaciente" id="formPacientes">
+                <div class="mb-3">
+                    <label for="txtNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="txtNombre" id="txtNombre" value="{{nombre}}">
+                </div>
+                <div class="mb-3">
+                    <label for="txtApellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" name="txtApellido" id="txtApellido" value="{{apellido}}">
+                </div>
+                <div class="mb-3">
+                    <label for="txtSexo" class="form-label">Sexo</label>
+                    <input type="text" class="form-control" name="txtSexo" id="txtSexo" value="{{sexo}}">
+                </div>
+                <div class="mb-3">
+                    <label for="txtRegistro" class="form-label">Fecha Registro</label>
+                    <input type="text" class="form-control" name="txtRegistro" id="txtRegistro" value="{{registro}}">
+                </div>
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-user-plus"></i> Agregar</button>
+                <button type="button" class="btn btn-success" onclick="refrescar();"><i class="fa-solid fa-arrows-rotate"></i> Obtener Nuevo Paciente</button>
+            </form>
+        </div>
+    </div>
+</div>
